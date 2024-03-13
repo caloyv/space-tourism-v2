@@ -11,7 +11,7 @@ const TechnologyNav = ({ screen }) => {
 
   useEffect(() => {
     if (!id || !data) {
-      navigate("/technology/1");
+      navigate("/space-tourism-v2/technology/1");
     } else {
       setData((prevState) => technologyData.find((data) => data.id === id));
     }

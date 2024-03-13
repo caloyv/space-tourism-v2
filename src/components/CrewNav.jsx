@@ -11,7 +11,7 @@ const CrewNav = () => {
 
   useEffect(() => {
     if (!id || !data) {
-      navigate("/crew/1");
+      navigate("/space-tourism-v2/crew/1");
     } else {
       setData((prevState) => crewData.find((data) => data.id === id));
     }

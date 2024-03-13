@@ -42,25 +42,25 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
         <div className="px-10 py-20">
           <ul className="flex flex-col gap-8 font-barlow-con font-normal tracking-[0.16875rem] text-white">
             <li>
-              <NavLink to="/" onClick={closeNav}>
+              <NavLink to="/space-tourism-v2" onClick={closeNav} end>
                 <span className="mr-4 font-extrabold">00</span>
                 HOME
               </NavLink>
             </li>
             <li>
-              <NavLink to="destination" onClick={closeNav}>
+              <NavLink to="/space-tourism-v2/destination" onClick={closeNav}>
                 <span className="mr-4 font-extrabold">01</span>
                 DESTINATION
               </NavLink>
             </li>
             <li>
-              <NavLink to="crew" onClick={closeNav}>
+              <NavLink to="/space-tourism-v2/crew" onClick={closeNav}>
                 <span className="mr-4 font-extrabold">02</span>
                 CREW
               </NavLink>
             </li>
             <li>
-              <NavLink to="technology" onClick={closeNav}>
+              <NavLink to="/space-tourism-v2/technology" onClick={closeNav}>
                 <span className="mr-4 font-extrabold">03</span>
                 TECHNOLOGY
               </NavLink>
@@ -81,7 +81,8 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
                   ? "before relative before:opacity-100"
                   : "before relative before:opacity-0"
               }
-              to="/"
+              to="/space-tourism-v2"
+              end
             >
               <span className="mr-4 hidden font-extrabold xl:inline">00</span>
               HOME
@@ -94,7 +95,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
                   ? "before relative before:opacity-100"
                   : "before relative before:opacity-0"
               }
-              to="destination"
+              to="/space-tourism-v2/destination"
             >
               <span className="mr-4 hidden font-extrabold xl:inline">01</span>
               DESTINATION
@@ -107,7 +108,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
                   ? "before relative before:opacity-100"
                   : "before relative before:opacity-0"
               }
-              to="crew"
+              to="/space-tourism-v2/crew"
             >
               <span className="mr-4 hidden font-extrabold xl:inline">02</span>
               CREW
@@ -120,7 +121,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
                   ? "before relative before:opacity-100"
                   : "before relative before:opacity-0"
               }
-              to="technology"
+              to="/space-tourism-v2/technology"
             >
               <span className="mr-4 hidden font-extrabold xl:inline">03 </span>
               TECHNOLOGY

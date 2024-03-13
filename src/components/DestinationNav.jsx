@@ -11,7 +11,7 @@ const DestinationNav = () => {
 
   useEffect(() => {
     if (!id || !data) {
-      navigate("/destination/1");
+      navigate("/space-tourism-v2/destination/1");
     } else {
       setData((prevState) => destinationData.find((data) => data.id === id));
     }
