@@ -24,16 +24,18 @@ const TechnologyNav = ({ screen }) => {
   const unLoad = () => {
     setIsLoaded(false);
   };
-
+// xl:pl-[166.5px]
   return (
-    <div className="xl:flex xl:h-full xl:w-full xl:max-w-[1920px] xl:items-center xl:justify-between xl:gap-[130px] xl:pl-[166.5px] xl:overflow-hidden">
-      <div className="order-2 max-w-[850px] xl:h-full xl:max-h-[600px] xl:w-full ">
-        <img
-          className={` h-full w-full object-contain ${isLoaded ? "fade-in" : ""}`}
-          src={screen >= 1280 ? data.imgPortrait : data.imgLandscape}
-          alt={`${data.name} image`}
-          onLoad={loaded}
-        />
+    <div className="xl:flex xl:h-full xl:w-full xl:max-w-[1920px] xl:items-center xl:justify-evenly xl:gap-[130px]   xl:overflow-hidden">
+      <div className="h-full order-2">
+        <div className=" max-w-[850px] xl:h-full xl:max-h-[600px] xl:w-full">
+          <img
+            className={` h-full w-full object-contain ${isLoaded ? "fade-in" : ""}`}
+            src={screen >= 1280 ? data.imgPortrait : data.imgLandscape}
+            alt={`${data.name} image`}
+            onLoad={loaded}
+          />
+        </div>
       </div>
       <div className="order-1 xl:flex xl:w-full xl:max-w-[560px] xl:items-center xl:gap-[80px] ">
         <ul className="my-[30px] flex justify-center gap-4 md:my-[56px] xl:h-full xl:flex-col  xl:gap-[32px]">
