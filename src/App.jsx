@@ -13,7 +13,7 @@ import TechnologyNav from './components/TechnologyNav'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/space-tourism-v2" element={<Layout />} >
+    <Route path="/space-tourism-v2/" element={<Layout />} >
       <Route index element={<Homepage/>} />
       <Route path="destination" element={<Destination />}>
         <Route path=":id" index element={<DestinationNav />} />

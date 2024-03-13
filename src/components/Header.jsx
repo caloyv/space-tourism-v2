@@ -42,7 +42,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
         <div className="px-10 py-20">
           <ul className="flex flex-col gap-8 font-barlow-con font-normal tracking-[0.16875rem] text-white">
             <li>
-              <NavLink to="/space-tourism-v2" onClick={closeNav} end>
+              <NavLink to="/space-tourism-v2/" onClick={closeNav} end>
                 <span className="mr-4 font-extrabold">00</span>
                 HOME
               </NavLink>
@@ -81,7 +81,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
                   ? "before relative before:opacity-100"
                   : "before relative before:opacity-0"
               }
-              to="/space-tourism-v2"
+              to="/space-tourism-v2/"
               end
             >
               <span className="mr-4 hidden font-extrabold xl:inline">00</span>
