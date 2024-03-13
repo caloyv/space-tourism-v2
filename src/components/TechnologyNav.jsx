@@ -29,7 +29,7 @@ const TechnologyNav = ({ screen }) => {
     <div className="xl:flex xl:h-full xl:w-full xl:max-w-[1920px] xl:items-center xl:justify-between xl:gap-[130px] xl:pl-[166.5px] xl:overflow-hidden">
       <div className="order-2 max-w-[850px] xl:h-full xl:max-h-[600px] xl:w-full ">
         <img
-          className={` h-full w-full object-contain ${isLoaded ? "fade-in-right" : ""}`}
+          className={` h-full w-full object-contain ${isLoaded ? "fade-in" : ""}`}
           src={screen >= 1280 ? data.imgPortrait : data.imgLandscape}
           alt={`${data.name} image`}
           onLoad={loaded}
