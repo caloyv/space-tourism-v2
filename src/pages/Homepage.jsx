@@ -21,7 +21,6 @@ const Homepage = () => {
       <BackgroundImg
         srcArr={bgSrc}
         isHFull
-        isBrightness
         isLoaded={isLoaded}
         screen={screen}
         loaded={loaded}

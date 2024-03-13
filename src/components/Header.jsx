@@ -11,7 +11,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
   };
 
   return (
-    <header className="absolute z-20 flex w-full items-center justify-between after:relative  after:z-30 after:order-1 after:mr-[-50px] after:hidden after:h-[3px] after:w-[50%] after:bg-white/[.25] after:content-[''] xl:pt-10 after:xl:block">
+    <header className="absolute z-20 flex w-full items-center justify-between after:relative  after:z-30 after:order-1 after:mr-[-50px] after:hidden after:h-[1px] after:w-[50%] after:bg-white/[.25] after:content-[''] xl:pt-10 after:xl:block">
       <div className="m-6 h-[40px] min-h-[40px] w-[40px] min-w-[40px] md:my-4 md:ml-[2.40625rem] xl:ml-[3.4375rem] ">
         <img className="w-full" src={logo} alt="Space Tourism Logo" />
       </div>
@@ -43,25 +43,25 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
           <ul className="flex flex-col gap-8 font-barlow-con font-normal tracking-[0.16875rem] text-white">
             <li>
               <NavLink to="/space-tourism-v2/" onClick={closeNav} end>
-                <span className="mr-4 font-extrabold">00</span>
+                <span className="mr-[11px] font-extrabold">00</span>
                 HOME
               </NavLink>
             </li>
             <li>
               <NavLink to="/space-tourism-v2/destination" onClick={closeNav}>
-                <span className="mr-4 font-extrabold">01</span>
+                <span className="mr-[11px] font-extrabold">01</span>
                 DESTINATION
               </NavLink>
             </li>
             <li>
               <NavLink to="/space-tourism-v2/crew" onClick={closeNav}>
-                <span className="mr-4 font-extrabold">02</span>
+                <span className="mr-[11px] font-extrabold">02</span>
                 CREW
               </NavLink>
             </li>
             <li>
               <NavLink to="/space-tourism-v2/technology" onClick={closeNav}>
-                <span className="mr-4 font-extrabold">03</span>
+                <span className="mr-[11px] font-extrabold">03</span>
                 TECHNOLOGY
               </NavLink>
             </li>
@@ -84,7 +84,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
               to="/space-tourism-v2/"
               end
             >
-              <span className="mr-4 hidden font-extrabold xl:inline">00</span>
+              <span className="mr-[11px] hidden font-extrabold xl:inline">00</span>
               HOME
             </NavLink>
           </li>
@@ -97,7 +97,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
               }
               to="/space-tourism-v2/destination"
             >
-              <span className="mr-4 hidden font-extrabold xl:inline">01</span>
+              <span className="mr-[11px] hidden font-extrabold xl:inline">01</span>
               DESTINATION
             </NavLink>
           </li>
@@ -110,7 +110,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
               }
               to="/space-tourism-v2/crew"
             >
-              <span className="mr-4 hidden font-extrabold xl:inline">02</span>
+              <span className="mr-[11px] hidden font-extrabold xl:inline">02</span>
               CREW
             </NavLink>
           </li>
@@ -123,7 +123,7 @@ const Header = ({ isOpen, setIsOpen, handleClick }) => {
               }
               to="/space-tourism-v2/technology"
             >
-              <span className="mr-4 hidden font-extrabold xl:inline">03 </span>
+              <span className="mr-[11px] hidden font-extrabold xl:inline">03 </span>
               TECHNOLOGY
             </NavLink>
           </li>
